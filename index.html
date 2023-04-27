@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Peluditos</title>
+  </head>
+  
+  <body>
+    <h1> Peluditos Pet shop </h1>
+
+    <!-- Bucar y lupita -->
+    <form>
+      <input type="text" placeholder="Buscar..."> <!-- se utiliza un formulario para incluir el campo de búsqueda y el botón de búsqueda -->
+      <button type="submit"><img src="imagenes\Lupita.png" alt="Buscar"></button>
+    
+    </form>
+
+    <header>
+            <img src="imagenes\Menu hamburguesa.png" alt="Menú" onclick="mostrarMenu()">
+        </div>
+            <nav id="menu" style="display:none;"> <!--"display none" para ocultarlo inicialmente -->
+            <ul>
+                <li><a href="#">Productos</a></li>
+                    <ul>
+                        <li><a href="#">Alimentos y Snacks</a></li>
+                    </ul>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Estetica e higiene</a></li>
+                <li><a href="#">Salud</a></li>
+            </ul>
+            </nav>
+      </header>
+
+      <!-- se agrega un script para mostrar y ocultar el menú al hacer clic en la imagen de la hamburguesa -->
+      <script>
+        function mostrarMenu() {
+          var menu = document.getElementById("menu");
+          if (menu.style.display === "none") {
+            menu.style.display = "block";
+          } else {
+            menu.style.display = "none";
+          }
+        }
+      </script>
+
+    <p>Productos destacados</p>
+
+
+  </body>
+</html>

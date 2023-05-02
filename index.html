@@ -3,45 +3,51 @@
   <head>
     <meta charset="UTF-8">
     <title>Peluditos</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
   </head>
   
   <body>
     <h1> Peluditos Pet shop </h1>
 
-    <!-- Bucar y lupita -->
-    <form>
-      <input type="text" placeholder="Buscar..."> <!-- se utiliza un formulario para incluir el campo de búsqueda y el botón de búsqueda -->
-      <button type="submit"><img src="imagenes\Lupita.png" alt="Buscar"></button>
-    
-    </form>
-
     <header>
-            <img src="imagenes\Menu hamburguesa.png" alt="Menú" onclick="mostrarMenu()">
-        </div>
-            <nav id="menu" style="display:none;"> <!--"display none" para ocultarlo inicialmente -->
-            <ul>
-                <li><a href="#">Productos</a></li>
-                    <ul>
-                        <li><a href="#">Alimentos y Snacks</a></li>
-                    </ul>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Estetica e higiene</a></li>
-                <li><a href="#">Salud</a></li>
+           
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
             </ul>
-            </nav>
-      </header>
-
-      <!-- se agrega un script para mostrar y ocultar el menú al hacer clic en la imagen de la hamburguesa -->
-      <script>
-        function mostrarMenu() {
-          var menu = document.getElementById("menu");
-          if (menu.style.display === "none") {
-            menu.style.display = "block";
-          } else {
-            menu.style.display = "none";
-          }
-        }
-      </script>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <p>Productos destacados</p>
 

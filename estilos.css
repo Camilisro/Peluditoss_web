@@ -1,0 +1,33 @@
+body {
+    height: 400px;
+    background-color: beige;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center; 
+  }
+
+#logotexto{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: lightskyblue;
+  }
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+/* Page content */
+.content {
+    padding: 16px;
+  }

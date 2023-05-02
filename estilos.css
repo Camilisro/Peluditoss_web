@@ -12,6 +12,22 @@ body {
     justify-content: center;
 }
 
+#Productos_destacados{
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center; /* Opcional: para centrar las imágenes */
+  }
+  
+  .contenedor-imagenes img {
+    flex: 1;
+    margin: 0 10px; /* Opcional: para agregar un margen entre las imágenes */
+  }
+  
 #navbar {
     overflow: hidden;
     background-color: lightskyblue;
@@ -31,3 +47,4 @@ body {
 .content {
     padding: 16px;
   }
+

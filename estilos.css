@@ -6,3 +6,19 @@ h1 {
     color: blue;
     text-align: center;
    }
+
+p {
+    color: blue;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu img{
+    max-width: 20%;
+}
+
+button {
+    background: none;
+}
